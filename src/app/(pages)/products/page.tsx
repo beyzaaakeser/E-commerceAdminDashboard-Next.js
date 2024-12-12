@@ -26,7 +26,7 @@ const Products = () => {
 
 const List = async () => {
   const data = await getProducts();
-  await new Promise((resolve) => setTimeout(resolve, 1000));
+  /*  await new Promise((resolve) => setTimeout(resolve, 1000)); */
   return (
     <div className="mt-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
       {data.map((product, key) => (
