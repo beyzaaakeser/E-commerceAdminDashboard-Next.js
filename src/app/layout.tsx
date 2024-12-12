@@ -33,7 +33,7 @@ export default function RootLayout({
           <Navbar />
           <div className="flex flex-col w-full">
             <Header />
-            <main className="flex-1 bg-[#F5F6FA] p-5">{children}</main>
+            <main className="flex-1 bg-[#edeff5] p-5">{children}</main>
           </div>
         </div>
       </body>

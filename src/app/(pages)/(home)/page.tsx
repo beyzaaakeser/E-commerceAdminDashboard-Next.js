@@ -5,6 +5,7 @@ import icon3 from '@/app/assets/images/icon-3.webp';
 import icon4 from '@/app/assets/images/icon-4.png';
 import { StaticImageData } from 'next/image';
 import InfoCard from './InfoCard';
+import SalesGraphics from './SalesGraphics';
 
 export type InfoItem = {
   icon: StaticImageData;
@@ -38,14 +39,14 @@ const Home = () => {
   return (
     <div>
       <h1 className="title">Dashboard</h1>
-      <section>
+      <section className="grid grid-cols sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-5">
         {cards.map((card, key) => (
           <InfoCard key={key} item={card} />
         ))}
       </section>
 
       <section>
-        <div>grafik</div>
+        <SalesGraphics/>
       </section>
     </div>
   );

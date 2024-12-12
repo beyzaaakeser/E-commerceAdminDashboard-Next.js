@@ -95,18 +95,6 @@
       "image_url": "https://picsum.photos/seed/73/500/500",
       "rating": "4",
       "reviewsCount": "0"
-    },
-    {
-      "id": "1459",
-      "name": "Samsung S26",
-      "brand": "Samsung",
-      "category": "Teknoloji",
-      "price": "1987.000",
-      "stock": "67",
-      "description": "Apple m1 çipli 16gb ram vs.",
-      "image_url": "https://picsum.photos/seed/41/500/500",
-      "rating": "4",
-      "reviewsCount": "0"
     }
   ],
   "users": [
