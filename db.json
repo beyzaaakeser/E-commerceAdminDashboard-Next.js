@@ -172,20 +172,6 @@
           "order_date": "2024-07-22"
         }
       ]
-    },
-    {
-      "id": "3",
-      "name": "Mehmet Demir",
-      "email": "mehmet.demir@example.com",
-      "password": "hashed_password_3",
-      "address": {
-        "street": "Mimar Sinan Bulv. No: 78",
-        "city": "Izmir",
-        "postal_code": "35000",
-        "country": "Turkey"
-      },
-      "phone": "+90 542 987 6543",
-      "orders": []
     }
   ],
   "orders": [
