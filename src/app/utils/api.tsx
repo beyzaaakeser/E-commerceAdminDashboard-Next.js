@@ -1,4 +1,4 @@
-import { Order, Product, User } from '../types';
+import { Order, Product, User, Values } from '../types';
 
 export const getOrders = async (): Promise<Order[]> => {
   const res = await fetch('http://localhost:3030/orders');
@@ -87,9 +87,8 @@ export const deleteUser = async (id: string): Promise<void> => {
   return res.json();
 };
 
-
 export const getUserById = async (id: string): Promise<User> => {
-  const res = await fetch(`http://localhost:3030/users/${id}`)
+  const res = await fetch(`http://localhost:3030/users/${id}`);
 
   if (!res.ok) {
     throw new Error('There was a problem retrieving user data.');
@@ -98,7 +97,7 @@ export const getUserById = async (id: string): Promise<User> => {
   return res.json();
 };
 
-/* export const getValues = async (): Promise<Values> => {
+export const getValues = async (): Promise<Values> => {
   const orderData = await getOrders();
   const userData = await getUsers();
   const productData = await getProducts();
@@ -115,4 +114,4 @@ export const getUserById = async (id: string): Promise<User> => {
     ),
     totalProducts: productData.length * 127,
   };
-}; */
+};
