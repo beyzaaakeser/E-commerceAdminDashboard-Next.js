@@ -6,6 +6,8 @@ import icon4 from '@/app/assets/images/icon-4.png';
 import { StaticImageData } from 'next/image';
 import InfoCard from './InfoCard';
 import SalesGraphics from './SalesGraphics';
+import { Values } from '@/app/types';
+import { getValues } from '@/app/utils/api';
 
 export type InfoItem = {
   icon: StaticImageData;
@@ -13,27 +15,30 @@ export type InfoItem = {
   value: number | string;
 };
 
-const Home = () => {
+const Home = async () => {
+
+  const values : Values= await getValues()
+
   const cards: InfoItem[] = [
     {
       icon: icon1,
       label: 'Total Users',
-      value: 327,
+      value: values.totalUsers,
     },
     {
       icon: icon2,
       label: 'Total Orders',
-      value: 504,
+      value: values.totalOrders,
     },
     {
       icon: icon3,
       label: 'Total Sales',
-      value: (142707).toLocaleString() + '$',
+      value: (values.totalIncome).toLocaleString() + '$',
     },
     {
       icon: icon4,
       label: 'Amount of Products',
-      value: 1428,
+      value: values.totalProducts,
     },
   ];
   return (
