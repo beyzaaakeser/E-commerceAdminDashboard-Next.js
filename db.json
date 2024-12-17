@@ -107,18 +107,6 @@
       "image_url": "https://picsum.photos/seed/48/500/500",
       "rating": "4",
       "reviewsCount": "0"
-    },
-    {
-      "id": "5158",
-      "name": "",
-      "brand": "",
-      "category": "",
-      "price": "",
-      "stock": "",
-      "description": "",
-      "image_url": "https://picsum.photos/seed/75/500/500",
-      "rating": "4",
-      "reviewsCount": "0"
     }
   ],
   "users": [
